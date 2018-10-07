@@ -1,0 +1,24 @@
+.go-back {
+    position: relative;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-150%, 5px) rotate(-135deg);
+        width: 10px;
+        height: 10px;
+        border-width: 1px 1px 0 0;
+        border-style: solid;
+        border-color: black;
+        transition: transform .3s ease;
+    }
+
+    &:hover:after {
+            transform: translate(-200%, 5px) rotate(-135deg);
+    }
+}

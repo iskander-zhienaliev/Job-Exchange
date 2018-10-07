@@ -1,0 +1,60 @@
+@import 'components/Core/core.scss';
+@import 'components/Item/item.scss';
+@import 'components/GoBack/go-back.scss';
+@import 'components/AsGuest/guest.scss';
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    background: linear-gradient(to right top, #4e617e, #2b87a4, #00aead, #60d097, #c6e977) no-repeat center;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    @media screen and (max-width: 720px){
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.15);
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+    }
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+
+    &.form__time {
+        width: 10%;
+    }
+}
